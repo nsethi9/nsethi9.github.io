@@ -1,3 +1,4 @@
-# nsethi9.github.io
+Tail Me - Team 46 ML Midterm
 
-sd
+Introduction
+Unlike professional sports, college football is a collection of nearly 150 teams - many of whom don't receive national attention. For many of these programs, local media outlets dominate their news coverage. In the context of sports betting, lines and odds are set by outsiders on a national scale. Thus, many of underlying information about a team may be captured by local media and kept a "secret" to these oddsmakers. We aim to explore how capturing local news sentiments can help us provide better context unknowna at the national level, and more accurately predict the outcome of a college football team's season. To do this, we examine local news articles about division 1 college football teams before a season and compare it against national odds predicting how well that team will do that year. 
