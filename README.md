@@ -17,6 +17,14 @@ Local news is the dominant outlet for many smaller college football programs and
 
 ### Data Preprocessing Methods
 - We start by gathering the dataset, done by webscraping local news articles in a specified format for all division one teams, aiming for around 10 articles per team. We extract the title and article content of each of these links and export it to a csv.
-- Next, we **filter out bad articles** by using sentence embeddings
-  *   js
-* 
+- Next, we **filter out bad articles**
+  *   First we **embed all of the titles** of the articles using a hugging face sentence embedding model. We then compare it against a set query and use cosine simililarty of the two embeddings in order to determine whether to drop the article or not. It is worth noting we artifically bump up some of the titles that contain certain keywords (i.e preview, predictions) in order to not incorrectly drop some of the articles.
+  *   We also drop all articles that could not be parsed correctly
+ - We then webscrape the odds database for all the teams, concatenating it with the dataframe of the articles to create a singular dataframe
+
+### Models
+There are two main models we implemented so far.
+1. Sentiment Analysis
+- We take all of the valid articles and their contents and score them from -1 to 1 on sentiment using a hugging face sentiment analysis model. We do this for each article for each team, followed by averaging them out for each team. The goal of this is to capture the overall sentiment of local news for the given team
+2. Linear regression
+- We then apply linear regression, using the sentiment scores for each team as the independent variable and the win differential (calculated as actual wins minus predicted wins) as the dependent variable. We do this method with a continuous outcome rather than simply predicting over and under in order to get a more accurate model. Using over/under as the outcome (binary, would have used logisitic regression) would have ignored many of the naunces associated with each data point. Thus, we opted to use a continuous variable as the outcome and then afterwards convert this to a binary over/under prediction for comparison in order to be more precise.
