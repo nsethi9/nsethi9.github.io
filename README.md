@@ -38,10 +38,18 @@ There are two main models we implemented so far.
 - **Accuracy:** 0.5135135135135135
 
 ![Linear Regression Basic](linear_regression_basic.png)
+- This is a basic plot of our linear regression model (sentiment of articles versus actual-predicted win loss difference)
+- Trendline is relatively steep, and the datapoints are at a similar level. Correlation is very subtle.
+- However, a steep trendline doesn't necessarily mean a good fit, indicated by the negative R-squared and relatively high MSE.
 
 ![Linear Regression Residual](linear_regression_residual.png)
-
+- This is a residual plot for the linear regression model.
+- There seems to be little to no clear pattern in the graph except for outliers towards the high end of the win total. Overall, this is a good sign there is no clear section of bias in our model and is without being influenced by any specific bias.
 
 ![Accuracy Confusion Matrix](accuracy_confusion_matrix.png)
+- The model is ever so slightly predicting over more than under, but overall pretty even. There is little trend here as there should be. This is good to know as we likely do not have to adjust the threshold to predict over or under (derived from predicted wins).
+
+### Conclusions
+The model is doing slightly better than guessing (51.3% over 50%) which is to be expected given that sentiment analysis of articles is likely to be no more than a small trend. This, coupled with the use of a basic model such as linear regression, was bound to only give a marginal increase over guessing, especially as sports betting is unfavorable to begin with. However, coupling this with other paramters could yield a much stronger model which we will explore in the futute.
 
 
