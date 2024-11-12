@@ -50,6 +50,6 @@ There are two main models we implemented so far.
 - The model is ever so slightly predicting over more than under, but overall pretty even. There is little trend here as there should be. This is good to know as we likely do not have to adjust the threshold to predict over or under (derived from predicted wins).
 
 ### Conclusions
-The model is doing slightly better than guessing (51.3% over 50%) which is to be expected given that sentiment analysis of articles is likely to be no more than a small trend. This, coupled with the use of a basic model such as linear regression, was bound to only give a marginal increase over guessing, especially as sports betting is unfavorable to begin with. However, coupling this with other paramters could yield a much stronger model which we will explore in the futute.
+The model is doing slightly better than guessing (51.3% over 50%) which is to be expected given that sentiment analysis of articles is likely to be no more than a small trend. This, coupled with the use of a basic model such as linear regression, was bound to only give a marginal increase over guessing, especially as sports betting is unfavorable to begin with. However, coupling this with other paramters could yield a much stronger model which we will explore in the future.
 
 
