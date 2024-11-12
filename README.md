@@ -31,8 +31,18 @@ There are two main models we implemented so far.
 
 
 ## Results and Discussion
-![Accuracy Confusion Matrix](accuracy_confusion_matrix.png)
+**
+Scores:
+Mean Squared Error: 3.3171764072001624
+R-squared: -0.02545207213662004
+Accuracy: 0.5135135135135135
+**
 
 ![Linear Regression Basic](linear_regression_basic.png)
 
 ![Linear Regression Residual](linear_regression_residual.png)
+
+
+![Accuracy Confusion Matrix](accuracy_confusion_matrix.png)
+
+
