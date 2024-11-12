@@ -31,3 +31,8 @@ There are two main models we implemented so far.
 
 
 ## Results and Discussion
+![Accuracy Confusion Matrix](accuracy_confusion_matrix.png)
+
+![Linear Regression Basic](linear_regression_basic.png)
+
+![Linear Regression Residual](linear_regression_residual.png)
