@@ -32,13 +32,10 @@ There are two main models we implemented so far.
 
 ## Results and Discussion
 
-**Scores:
-\\
+**Scores:**
 Mean Squared Error: 3.3171764072001624
-\\
 R-squared: -0.02545207213662004
-\\
-Accuracy: 0.5135135135135135**
+Accuracy: 0.5135135135135135
 
 ![Linear Regression Basic](linear_regression_basic.png)
 
