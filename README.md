@@ -12,3 +12,10 @@ Explore if article sentiments from local news can provide insight to team perfor
 
 ### Motivation
 Local news is the dominant outlet for many smaller college football programs and may be kept a secret or inaccurately judged by national oddsmakers in college football.
+
+## Methods
+
+### Data Preprocessing Methods
+- We start by gathering the dataset, done by webscraping local news articles in a specified format for all division one teams, aiming for around 10 articles per team. We extract the title and article content of each of these links and export it to a csv.
+- Next, we **filter out bad articles** by using sentence embeddings
+    - 
