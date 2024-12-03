@@ -35,6 +35,24 @@ There are two main models we implemented so far.
 2. Linear regression
 - We then apply linear regression, using the sentiment scores for each team as the independent variable and the win differential (calculated as actual wins minus predicted wins) as the dependent variable. We do this method with a continuous outcome rather than simply predicting over and under in order to get a more accurate model. Using over/under as the outcome (binary, would have used logisitic regression) would have ignored many of the naunces associated with each data point. Thus, we opted to use a continuous variable as the outcome and then afterwards convert this to a binary over/under prediction for comparison in order to be more precise.
 
+## Model 2: KMeans Clustering (Unsupervised)  
+### Data Preprocessing Methods  
+- We started by scraping team statistics from the 2022 college football season using a detailed sports database, [College Football Team Data](https://www.sports-reference.com/cfb/years/2022-team-offense.html). This dataset provided a variety of performance metrics, including offensive and defensive stats for each team.  
+- Additionally, we gathered data on returning starters for the 2023 season. We turned this into a **percentile ranking** to quantify the strength of each team’s roster based on the proportion of returning starters compared to other teams.  
+- We then combined these statistics into a single dataframe, ensuring all teams had both statistical performance and roster strength data.  
+- **Feature Scaling** was applied using **Min-Max Scaling** to normalize the data. This ensures all variables (e.g., offensive efficiency, defensive stats, returning starters) are on the same scale, preventing any one feature from dominating the clustering process due to scale differences.
+
+### Models Used  
+There is one main model we implemented for this stage.  
+1. **KMeans Clustering**  
+- **Clustering Teams Based on Statistical Profiles**: We used KMeans, an unsupervised learning algorithm, to group teams based on their overall statistical profile. The algorithm works by assigning each team to one of k clusters based on its proximity to the centroid of each cluster. We experimented with 5 clusters, but the number of clusters was tuned based on model performance.  
+- **KMeans Algorithm**: KMeans begins by initializing k centroids randomly and iterating through the dataset to assign teams to the closest centroids. It recalculates the centroids based on the mean values of the teams in each cluster and repeats this process until the clusters stabilize (i.e., the centroids no longer change). This process helps identify natural groupings within the data.  
+- **Cluster Analysis**: After clustering, we analyzed the characteristics of each group, identifying patterns in features like offensive and defensive performance, as well as the percentage of returning starters. For example, we could observe whether teams with high returning starters and strong offense clustered together, or if teams with weak defenses were more likely to fall into certain clusters. This helped us predict which types of teams might outperform or underperform their predicted win totals for the 2023 season.
+
+### Outcome and Insights  
+The clustering model provided valuable insights into team performance by grouping teams with similar statistical profiles. These clusters allowed us to identify trends in team success, helping to predict which teams were more likely to exceed or fall short of their expected win totals. By analyzing these clusters, we gained a clearer understanding of how different team types might fare, giving sports bettors a unique edge when evaluating the 2023 season.
+
+
 
 ## Results and Discussion
 
