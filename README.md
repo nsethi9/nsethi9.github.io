@@ -1,8 +1,8 @@
 # Tail Me - Team 46 ML Final Report
 
-## Problem Definition
+## Introduction / Background
 
-Unlike professional sports, college football is a collection of nearly 150 teams - many of whom don't receive national attention. For many of these programs, local media outlets dominate their news coverage. In the context of sports betting, lines and odds are set by outsiders on a national scale. Thus, much of the underlying information about a team may be captured by local media and kept a "secret" to these oddsmakers. We aim to explore how capturing local news sentiments can help us provide better context unknown at the national level and more accurately predict the outcome of a college football team's season. Others have tried approaches at the individual level (i.e., social media) to predict outcomes for sports and similar topics; however, the concept of looking one level at local news is relatively unexplored [IEEE Explore](https://ieeexplore.ieee.org/document/8530517) and [MDPI](https://www.mdpi.com/2624-831X/1/2/14).
+Unlike professional sports, college football is a collection of nearly 150 teams - many of whom don't receive national attention. For many of these programs, local media outlets dominate their news coverage. In the context of sports betting, lines and odds are set by outsiders on a national scale. Thus, much of the underlying information about a team may be captured by local media and kept a "secret" to these oddsmakers. Additionally, key team statistics—such as returning players, offensive and defensive metrics, and overall roster continuity—often go underexplored at the national level. We aim to explore how capturing local news sentiments, combined with these underexplored team statistics, can provide context that national coverage misses and lead to more accurate predictions of a college football team's season. While others have explored social media and individual-level data to predict outcomes, the concept of analyzing local news coverage is still relatively untapped in this space [IEEE Explore](https://ieeexplore.ieee.org/document/8530517) and [MDPI](https://www.mdpi.com/2624-831X/1/2/14).
 
 For our first model, we took a fresh approach to predict college football team performance by combining local sentiment with national betting odds. For every FBS team, we scraped local news articles to get a sense of how writers felt about their team's chances before the 2023 season. Using advanced tools, we analyzed the tone of these articles—whether positive, negative, or neutral—and turned that sentiment into a numerical score. We then used this score to create a simple prediction: whether bettors should take the over or under on a team's projected wins for the season. To check how accurate our model was, we compared it against national win projections from [Sports Odds History](https://www.sportsoddshistory.com/cfb-win/?y=2023&sa=cfb&t=win&o=t). By mixing local coverage with national odds, we developed a new way to approach sports betting predictions.
 
@@ -14,10 +14,10 @@ Finally, to take our predictions to the next level, we combined both models into
 
 ## Problem Definition
 ### Problem
-Explore if article sentiments from local news can provide insight to team performance in the upcoming season in college football.
+Predicting college football team performance can be challenging, as national odds often overlook both the local sentiment surrounding a team and key team statistics. We aim to explore whether combining insights from local news articles—capturing the emotions and opinions of writers close to the team—with overlooked team metrics like returning players and offensive/defensive statistics that can provide valuable predictions for the upcoming season.
 
 ### Motivation
-Local news is the dominant outlet for many smaller college football programs and may be kept a secret or inaccurately judged by national oddsmakers in college football.
+Local news and underexplored team statistics often contain critical information that is underutilized by national oddsmakers, especially for smaller programs. By analyzing both the narratives in local reporting and metrics like roster continuity and past performance, we aim to uncover insights that can give sports bettors a significant edge in predicting team success.
 
 ## Methods
 
