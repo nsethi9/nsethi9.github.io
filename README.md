@@ -89,9 +89,9 @@ The model is doing slightly better than guessing (51.3% over 50%) which is to be
 
 | Name            | Proposal Contributions                                  |
 |-----------------|---------------------------------------------------------|
-| Charlie Hamilton| Github Pages Setup, Proposal Writeup, Gantt Chart for Proposal, Model Selection for Sentiment Analysis, Data Pre-Processing for KMeans Clustering, Model Coding for all models, Midterm Report, Model Selection for Random Forest, Model Comparison, Presentation, Recording, Final Report |
-| Nevin Sethi     | Methods, Video Recording, Data Sourcing and Cleaning for KMeans, Data Pre-Processing for Sentiment Analysis, Data Pre-Processing for Random Forest, Results Evaluation and Analysis for KMeans, Results Evaluation and Analysis for Random Forest, Google Slides, Final Video, Model Comparison, Presentation, Recording, Final Report |
-| Seth Fagin      | Introduction and Background, Problem Definition, Video Recording, Gantt Chart and Contribution Table, Data Sourcing and Cleaning for Sentiment Analysis, Results Evaluation and Analysis for Sentiment Analysis, Model Selection for KMeans, Model Selection for Random Forest, Model Comparison, Presentation, Recording, Final Report |
+| Charlie Hamilton| Github Pages Setup, Proposal Writeup, Gantt Chart for Proposal, Model Selection for Sentiment Analysis / Linear Regression, Data Pre-Processing for KMeans Clustering, Midterm Report, Model Selection for Sentiment Analysis, Model Comparisons, Final Presentation, Final Recording, Final Report |
+| Nevin Sethi     | Proposal Methods, Video Recording for Proposal, Data Sourcing and Cleaning for KMeans, Data Pre-Processing for Sentiment Analysis, Data Pre-Processing for Random Forest, Results Evaluation and Analysis for KMeans, Results Evaluation and Analysis for Random Forest, Google Slides, Final Video, Model Comparisons, Final Presentation, Final Recording, Final Report |
+| Seth Fagin      | Introduction and Background, Problem Definition, Video Recording for Proposal, Gantt Chart and Contribution Table, Model Coding for Random Forest, Data Sourcing and Cleaning for Sentiment Analysis, Results Evaluation and Analysis for Sentiment Analysis / Linear Regression, Model Selection for KMeans, Model Coding for KMeans, Model Selection for Random Forest, Model Comparisons, Final Presentation, Final Recording, Final Report |
 
 ## Link to Gantt Chart
 [Gantt Chart](https://docs.google.com/spreadsheets/d/1bbKUSDxJFoK4ky9VcbNaSTmDr1u1k4chZWNa7AIZ_jU/edit?gid=1538336270#gid=1538336270)
