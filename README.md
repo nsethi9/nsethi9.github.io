@@ -20,7 +20,7 @@ Predicting college football team performance can be challenging, as national odd
 Local news and underexplored team statistics often contain critical information that is underutilized by national oddsmakers, especially for smaller programs. By analyzing both the narratives in local reporting and metrics like roster continuity and past performance, we aim to uncover insights that can give sports bettors a significant edge in predicting team success.
 
 ## Methods
-
+## Model 1: Sentiment Analysis and Linear Regression (Supervised)
 ### Data Preprocessing Methods
 - We start by gathering the dataset, done by webscraping local news articles in a specified format for all division one teams, aiming for around 10 articles per team. We extract the title and article content of each of these links and export it to a csv.
 - Next, we **filter out bad articles**
@@ -28,7 +28,7 @@ Local news and underexplored team statistics often contain critical information 
   *   We also drop all articles that could not be parsed correctly
  - We then webscrape the odds database for all the teams, concatenating it with the dataframe of the articles to create a singular dataframe
 
-### Models
+### Models Used
 There are two main models we implemented so far.
 1. Sentiment Analysis
 - We take all of the valid articles and their contents and score them from -1 to 1 on sentiment using a hugging face sentiment analysis model. We do this for each article for each team, followed by averaging them out for each team. The goal of this is to capture the overall sentiment of local news for the given team. Sentiment analysis is a supervised NLP technique that (as the name implies) captures the sentiment of the given text. No preprocessing of the text was required as it is a transformer based model that takes capitalization, punctuation, stopwords, etc. into account; as long as the article content was correctly scraped we passed it in as is. 
