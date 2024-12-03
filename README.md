@@ -85,7 +85,7 @@ There is one main model we implemented for this stage.
 ### Conclusions
 The model is doing slightly better than guessing (51.3% over 50%) which is to be expected given that sentiment analysis of articles is likely to be no more than a small trend. This, coupled with the use of a basic model such as linear regression, was bound to only give a marginal increase over guessing, especially as sports betting is unfavorable to begin with. However, coupling this with other paramters could yield a much stronger model which we will explore in the future.
 
-## Link to gantt chart
-https://docs.google.com/spreadsheets/d/1bbKUSDxJFoK4ky9VcbNaSTmDr1u1k4chZWNa7AIZ_jU/edit?gid=1538336270#gid=1538336270
+## Link to Gantt Chart
+[Gantt Chart](https://docs.google.com/spreadsheets/d/1bbKUSDxJFoK4ky9VcbNaSTmDr1u1k4chZWNa7AIZ_jU/edit?gid=1538336270#gid=1538336270)
 
 
