@@ -1,4 +1,4 @@
-# Tail Me - Team 46 ML Midterm
+# Tail Me - Team 46 ML Final Report
 
 ## Problem Definition
 
