@@ -30,7 +30,7 @@ Local news and underexplored team statistics often contain critical information 
 There are two main models we implemented so far.
 1. Sentiment Analysis
 - We take all of the valid articles and their contents and score them from -1 to 1 on sentiment using a hugging face sentiment analysis model. We do this for each article for each team, followed by averaging them out for each team. The goal of this is to capture the overall sentiment of local news for the given team. Sentiment analysis is a supervised NLP technique that (as the name implies) captures the sentiment of the given text. No preprocessing of the text was required as it is a transformer based model that takes capitalization, punctuation, stopwords, etc. into account; as long as the article content was correctly scraped we passed it in as is. 
-2. Linear regression
+2. Linear Regression
 - We then apply linear regression, using the sentiment scores for each team as the independent variable and the win differential (calculated as actual wins minus predicted wins) as the dependent variable. We do this method with a continuous outcome rather than simply predicting over and under in order to get a more accurate model. Using over/under as the outcome (binary, would have used logisitic regression) would have ignored many of the naunces associated with each data point. Thus, we opted to use a continuous variable as the outcome and then afterwards convert this to a binary over/under prediction for comparison in order to be more precise.
 
 ### Model 2: KMeans Clustering (Unsupervised)  
@@ -89,10 +89,9 @@ The model is doing slightly better than guessing (51.3% over 50%) which is to be
 
 | Name            | Proposal Contributions                                  |
 |-----------------|---------------------------------------------------------|
-| Charlie Hamilton| Potential results and discussion, GitHub page, video recording |
-| Nevin Sethi     | Methods, video recording                               |
-| Seth Fagin      | Introduction and background, problem definition, video recording |
-
+| Charlie Hamilton| Github Pages Setup, Proposal Writeup, Gantt Chart for Proposal, Model Selection for Sentiment Analysis, Data Pre-Processing for KMeans Clustering, Model Coding for all models, Midterm Report, Model Selection for Random Forest, Model Comparison, Presentation, Recording, Final Report |
+| Nevin Sethi     | Methods, Video Recording, Data Sourcing and Cleaning for KMeans, Data Pre-Processing for Sentiment Analysis, Data Pre-Processing for Random Forest, Results Evaluation and Analysis for KMeans, Results Evaluation and Analysis for Random Forest, Google Slides, Final Video, Model Comparison, Presentation, Recording, Final Report |
+| Seth Fagin      | Introduction and Background, Problem Definition, Video Recording, Gantt Chart and Contribution Table, Data Sourcing and Cleaning for Sentiment Analysis, Results Evaluation and Analysis for Sentiment Analysis, Model Selection for KMeans, Model Selection for Random Forest, Model Comparison, Presentation, Recording, Final Report |
 
 ## Link to Gantt Chart
 [Gantt Chart](https://docs.google.com/spreadsheets/d/1bbKUSDxJFoK4ky9VcbNaSTmDr1u1k4chZWNa7AIZ_jU/edit?gid=1538336270#gid=1538336270)
