@@ -90,16 +90,16 @@ There is one main model we implemented for this stage.
 - **R-squared:** 0.02
 - **Accuracy:** 57.14285714285714
 
-![Random Forest Residual](linear_regression_basic.png)
+![Random Forest Residual]()
 - This is a residual plot for the random forest model.
-- 
+- There is not a super clear pattern in this plot, similar to model one. This graph is a good sign there is little to no bias in this model.
 
-![Feature Importance](linear_regression_residual.png)
+![Feature Importance]()
 - This is a basic feature importance chart of our random forest model.
 - It has cluster probability with a .15 feature importance and sentiment average with a 0.9 feature importance.
 - This likely means that sentiment average was vastly more important when it came to influencing the model to provide an accurate outcome.
 
-![Confusion Matrix](accuracy_confusion_matrix.png)
+![Confusion Matrix]()
 - This model predicts over a good bit more than under, but still predicts the under occasionally. This is a contrast from the first model, where over still had a slight edge, but it was for the most part even. To fix this, there are many things one could do, such as resampling the data, or adjusting the class weights.
 
 ### Conclusions
