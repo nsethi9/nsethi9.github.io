@@ -64,7 +64,7 @@ There is one main model we implemented for this stage.
 - **Model Evaluation**: To evaluate the quality of our model, we used **accuracy metrics** to ensure our Random Forest model was providing reliable and generalizable predictions. The model was able to account for complex interactions between the sentiment data and statistical cluster information, making it a powerful tool for predicting team performance.
 
 ## Results and Discussion
-
+### Model 1: Sentiment Analysis and Linear Regression (Supervised)
 **Scores:**
 - **Mean Squared Error:** 3.3171764072001624
 - **R-squared:** -0.02545207213662004
@@ -81,6 +81,10 @@ There is one main model we implemented for this stage.
 
 ![Accuracy Confusion Matrix](accuracy_confusion_matrix.png)
 - The model is ever so slightly predicting over more than under, but overall pretty even. There is little trend here as there should be. This is good to know as we likely do not have to adjust the threshold to predict over or under (derived from predicted wins).
+
+### Model 2: KMeans Clustering (Unsupervised)
+
+### Model 3: Random Forest (Supervised)  
 
 ### Conclusions
 
