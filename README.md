@@ -83,6 +83,17 @@ There is one main model we implemented for this stage.
 - The model is ever so slightly predicting over more than under, but overall pretty even. There is little trend here as there should be. This is good to know as we likely do not have to adjust the threshold to predict over or under (derived from predicted wins).
 
 ### Model 2: KMeans Clustering (Unsupervised)
+**Scores:**
+- **Silhouette Score:** 0.209
+- **Accuracy:** 0.52381
+
+![Elbow Graph]()
+- This is an Elbow graph, which helps us determine the optimal number of clusters for KMeans.
+- The ideal point is typically where the curve transitions from steep to more gradual, indicating diminishing returns from adding more clusters. In our case, this 'elbow' occurred at 4, so we chose to create 4 clusters.
+
+![KMeans Clustering Visualization]()
+- This is the KMeans clustering output for teams with similar characteristics based on their 2022 season statistics.
+- By identifying clusters with similar statistics, we can explore potential trends in betting lines.
 
 ### Model 3: Random Forest (Supervised)
 **Scores:**
@@ -106,9 +117,9 @@ There is one main model we implemented for this stage.
 
 Our first model, which used Sentiment Analysis, performed slightly better than random guessing, achieving an accuracy of 51.3% compared to the 50% baseline. This result was expected, as sentiment analysis of articles is likely to capture only minor trends. Coupled with the use of a basic model like linear regression, it was unlikely to yield more than a marginal improvement, especially given the inherently unfavorable nature of sports betting.
 
-Our second model, which incorporated KMeans Clustering, showed a slight improvement with an accuracy of 52.38%. By making predictions using KMeans clustering alone, we demonstrated a correlation between certain team statistics and their projected win totals. However, it still falls short of the 53% accuracy threshold typically required to be profitable in sports betting, which is generally seen as the minimum necessary for a positive return on investment.
+Our second model, which incorporated KMeans Clustering, showed a slight improvement with an accuracy of 52.38% in guessing the over/under for team projected win totals. By making predictions using KMeans clustering alone, we demonstrated a correlation between certain team statistics and drew insights into how these similarities connected to projected win totals. However, our accuracy still falls short of the 53% accuracy threshold typically required to be profitable in sports betting, which is generally seen as the minimum necessary for a positive return on investment.
 
-Finally, our third model, which combined sentiment analysis and KMeans clustering data with a Random Forest classifier, achieved a remarkable accuracy of 57.14%. This is a profitable result, indicating that our sports betting model has successfully outperformed the Vegas odds. We are excited about this outcome and look forward to refining our models in the future to achieve real-world profitability.
+Finally, our third model, which combined sentiment analysis and KMeans clustering data with a Random Forest classifier, achieved a remarkable accuracy of 57.14% in over/under bets for projected team win totals. This is a profitable result, indicating that our sports betting model has successfully outperformed the Vegas odds. We are excited about this outcome and look forward to refining our models in the future to achieve real-world profitability.
 
 ## Contribution Table
 
