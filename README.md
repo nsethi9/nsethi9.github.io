@@ -83,7 +83,12 @@ There is one main model we implemented for this stage.
 - The model is ever so slightly predicting over more than under, but overall pretty even. There is little trend here as there should be. This is good to know as we likely do not have to adjust the threshold to predict over or under (derived from predicted wins).
 
 ### Conclusions
-The model is doing slightly better than guessing (51.3% over 50%) which is to be expected given that sentiment analysis of articles is likely to be no more than a small trend. This, coupled with the use of a basic model such as linear regression, was bound to only give a marginal increase over guessing, especially as sports betting is unfavorable to begin with. However, coupling this with other paramters could yield a much stronger model which we will explore in the future.
+
+Our first model, which used Sentiment Analysis, performed slightly better than random guessing, achieving an accuracy of 51.3% compared to the 50% baseline. This result was expected, as sentiment analysis of articles is likely to capture only minor trends. Coupled with the use of a basic model like linear regression, it was unlikely to yield more than a marginal improvement, especially given the inherently unfavorable nature of sports betting.
+
+Our second model, which incorporated KMeans Clustering, showed a slight improvement with an accuracy of 52.38%. By making predictions using KMeans clustering alone, we demonstrated a correlation between certain team statistics and their projected win totals. However, it still falls short of the 53% accuracy threshold typically required to be profitable in sports betting, which is generally seen as the minimum necessary for a positive return on investment.
+
+Finally, our third model, which combined sentiment analysis and KMeans clustering data with a Random Forest classifier, achieved a remarkable accuracy of 57.14%. This is a profitable result, indicating that our sports betting model has successfully outperformed the Vegas odds. We are excited about this outcome and look forward to refining our models in the future to achieve real-world profitability.
 
 ## Contribution Table
 
