@@ -53,7 +53,8 @@ There is one main model we implemented for this stage.
 #### Data Preprocessing Methods  
 - After building the initial models, we combined the insights from the **Sentiment Analysis** and **KMeans Clustering** models to create a unified prediction model using **Random Forest**.  
 - To prepare the data for this model, we first extracted key features from both models. This included the **sentiment score** (from the Sentiment Analysis model) and the **cluster probability** (from the KMeans Clustering model), which represented each team's placement in the cluster and its likelihood of exceeding or falling short of expectations.  
-- We combined these features into a single dataset, ensuring that all necessary data points were present and properly formatted for input into the Random Forest algorithm. No further feature scaling was needed, as Random Forest is a tree-based model that handles raw data effectively.  
+- We combined these features into a single dataset, ensuring that all necessary data points were present and properly formatted for input into the Random Forest algorithm. No further feature scaling was needed, as Random Forest is a tree-based model that handles raw data effectively.
+- Furthermore, we ensured that the same test and training sets were used for both the KMeans algorithm and the Random Forest model. This was done to prevent any potential data leakage, ensuring that the test set used in Random Forest was not influenced by the training set from KMeans clustering.
 
 #### Models Used  
 There is one main model we implemented for this stage.  
