@@ -87,11 +87,11 @@ There is one main model we implemented for this stage.
 - **Silhouette Score:** 0.209
 - **Accuracy:** 0.52381
 
-![Elbow Graph]()
+![Elbow Graph](Elbow_Graph.png)
 - This is an Elbow graph, which helps us determine the optimal number of clusters for KMeans.
 - The ideal point is typically where the curve transitions from steep to more gradual, indicating diminishing returns from adding more clusters. In our case, this 'elbow' occurred at 4, so we chose to create 4 clusters.
 
-![KMeans Clustering Visualization]()
+![KMeans Clustering Visualization](KMeans Visualization.png)
 - This is the KMeans clustering output for teams with similar characteristics based on their 2022 season statistics.
 - By identifying clusters with similar statistics, we can explore potential trends in betting lines.
 
